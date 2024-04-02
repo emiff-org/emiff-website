@@ -142,8 +142,8 @@ header nav[aria-expanded="true"] .nav-hamburger-icon::after {
 
 header nav .nav-brand {
   display: flex;
-  gap: var(--udexSpacer8);
-  padding: var(--udexSpacer16) 0 var(--udexSpacer16) var(--header-margin);
+  gap: 8px;
+  padding: 16px 0 16px 8px;
   transition: padding 0.3s ease;
 }
 
@@ -154,7 +154,7 @@ header nav[aria-expanded='true'] .nav-brand {
 @media (width >= 980px) {
   header nav .nav-brand {
     display: inline-flex;
-    gap: var(--udexSpacer16);
+    gap: 16px;
     align-self: stretch;
     align-items: center;
     flex: 0 0 auto;
@@ -171,11 +171,11 @@ header nav .nav-brand .icon {
 header nav .nav-brand .site-label {
   display: inline;
   position: relative;
-  color: var(--udexColorGrey8);
-  font-weight: var(--udexTypographyFontWeightBold);
-  font-size: var(--udexTypographyNavigationBoldXLFontSize);
-  letter-spacing: var(--navigation-bold-XL-letter-spacing);
-  line-height: var(--udexTypographyNavigationLineHeight);
+  color: var(--brand-color);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1;
+  line-height: 1.1;
   white-space: nowrap;
   top: -9px;
 }
