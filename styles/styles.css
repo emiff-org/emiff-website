@@ -12,6 +12,7 @@
 
 :root {
   /* colors */
+  --brand-color: #4C9AC6;
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
   --background-color: white;
@@ -20,7 +21,7 @@
   --text-color: black;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  --body-font-family: tahoma, sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
@@ -198,13 +199,13 @@ main .section {
 
 @media (width >= 900px) {
   .section > div {
-    max-width: 1200px;
+    max-width: 980px;
     margin: auto;
   }
 }
 
 /* section metadata */
-main .section.light,
+/* main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
-}
+} */

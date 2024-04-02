@@ -1,5 +1,8 @@
-import { getMetadata } from '../../scripts/aem.js';
+import { getMetadata, decorateIcons } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
+import {
+  div, span, input, p, button, a,
+} from '../../scripts/dom-builder.js';
 
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 900px)');
@@ -86,6 +89,38 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   }
 }
 
+function decorateLogo(nav) {
+  const navBrand = nav.querySelector('.nav-brand');
+  const brandLogo = div(
+    { class: 'logo' },
+    a(
+      {
+        href: '/',
+        title: 'SAP',
+        'aria-label': 'SAP',
+      },
+      span({ class: 'icon icon-brand' }),
+    ),
+  );
+  const brandElementsWrapper = navBrand.firstElementChild;
+  if (
+    brandElementsWrapper != null
+    && brandElementsWrapper.classList.contains('default-content-wrapper')
+  ) {
+    brandElementsWrapper.prepend(brandLogo);
+  } else {
+    navBrand.prepend(brandLogo);
+  }
+  const brandLink = navBrand.querySelector('.button');
+  if (brandLink) {
+    brandLink.className = '';
+    brandLink.closest('.button-container').className = '';
+  }
+  const brandElement = navBrand.querySelectorAll('p');
+  brandElement[0].classList.add('site-label');
+  decorateIcons(brandLogo);
+}
+
 /**
  * decorates the header, mainly the nav
  * @param {Element} block The header block element
@@ -106,6 +141,9 @@ export default async function decorate(block) {
     const section = nav.children[i];
     if (section) section.classList.add(`nav-${c}`);
   });
+
+  // populate logo
+  decorateLogo(nav);
 
   const navBrand = nav.querySelector('.nav-brand');
   const brandLink = navBrand.querySelector('.button');

@@ -1,6 +1,6 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: var(--brand-color);
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -139,17 +139,51 @@ header nav[aria-expanded="true"] .nav-hamburger-icon::after {
 }
 
 /* brand */
-header .nav-brand {
-  grid-area: brand;
-  flex-basis: 128px;
-  font-size: var(--heading-font-size-s);
-  font-weight: 700;
-  line-height: 1;
+
+header nav .nav-brand {
+  display: flex;
+  gap: var(--udexSpacer8);
+  padding: var(--udexSpacer16) 0 var(--udexSpacer16) var(--header-margin);
+  transition: padding 0.3s ease;
 }
 
-header nav .nav-brand img {
-  width: 128px;
-  height: auto;
+header nav[aria-expanded='true'] .nav-brand {
+  /* display: none; */
+}
+
+@media (width >= 980px) {
+  header nav .nav-brand {
+    display: inline-flex;
+    gap: var(--udexSpacer16);
+    align-self: stretch;
+    align-items: center;
+    flex: 0 0 auto;
+    position: relative;
+    top: unset;
+  }
+}
+
+header nav .nav-brand .icon {
+  height: unset;
+  width: 2rem;
+}
+
+header nav .nav-brand .site-label {
+  display: inline;
+  position: relative;
+  color: var(--udexColorGrey8);
+  font-weight: var(--udexTypographyFontWeightBold);
+  font-size: var(--udexTypographyNavigationBoldXLFontSize);
+  letter-spacing: var(--navigation-bold-XL-letter-spacing);
+  line-height: var(--udexTypographyNavigationLineHeight);
+  white-space: nowrap;
+  top: -9px;
+}
+
+@media (width >= 980px) {
+  header nav .nav-brand .site-label {
+    top: unset;
+  }
 }
 
 /* sections */
