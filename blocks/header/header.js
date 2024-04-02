@@ -1,7 +1,7 @@
 import { getMetadata, decorateIcons } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 import {
-  div, span, input, p, button, a,
+  div, span, a,
 } from '../../scripts/dom-builder.js';
 
 // media query match that indicates mobile/tablet width
