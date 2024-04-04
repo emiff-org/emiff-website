@@ -12,13 +12,16 @@
 
 :root {
   /* colors */
-  --brand-color: #4C9AC6;
+  --brand-color-blue: #4C9AC6;
+  --brand-color-yellow: #F4D703;
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
   --background-color: white;
   --light-color: #eee;
   --dark-color: #ccc;
   --text-color: black;
+  --navtext-color: var(--brand-color-yellow);
+  --navmenu-color: #54A9DA;
 
   /* fonts */
   --body-font-family: tahoma, sans-serif;
@@ -31,15 +34,15 @@
   --body-font-size-xs: 16px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 48px;
-  --heading-font-size-xl: 40px;
-  --heading-font-size-l: 32px;
-  --heading-font-size-m: 24px;
-  --heading-font-size-s: 20px;
-  --heading-font-size-xs: 18px;
+  --heading-font-size-xxl: 32px;
+  --heading-font-size-xl: 24px;
+  --heading-font-size-l: 20px;
+  --heading-font-size-m: 18px;
+  --heading-font-size-s: 16px;
+  --heading-font-size-xs: 12px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 96px;
 }
 
 @font-face {
@@ -51,12 +54,12 @@
 
 @media (width >= 900px) {
   :root {
-    --heading-font-size-xxl: 60px;
-    --heading-font-size-xl: 48px;
-    --heading-font-size-l: 36px;
-    --heading-font-size-m: 30px;
-    --heading-font-size-s: 24px;
-    --heading-font-size-xs: 22px;
+  --heading-font-size-xxl: 40px;
+  --heading-font-size-xl: 32px;
+  --heading-font-size-l: 24px;
+  --heading-font-size-m: 20px;
+  --heading-font-size-s: 18px;
+  --heading-font-size-xs: 16px;
   }
 }
 
