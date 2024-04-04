@@ -15,14 +15,14 @@
   order: 0;
 }
 
-.columns > div > .columns-img-col img {
-  display: block;
-}
-
 /* contains image with person, made round with max width 50%, aligned to the right */
 .columns.authors img {
   max-width: 50%;
   border-radius: 50%;
+}
+
+.columns > div > .columns-img-col img {
+  display: block;
 }
 
 @media (width >= 900px) {
