@@ -143,13 +143,13 @@ a.button:any-link, button {
   box-sizing: border-box;
   text-decoration: none;
   border: 2px solid transparent;
-  padding: 5px 30px;
+  padding: 3px 20px;
   text-align: center;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
+  color: var(--brand-color-yellow);
+  background-color: var(--brand-color-lightblue);
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
@@ -177,6 +177,10 @@ main img {
   max-width: 100%;
   width: auto;
   height: auto;
+}
+
+main div.columns {
+  object-fit: none;
 }
 
 .icon {

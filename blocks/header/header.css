@@ -281,13 +281,15 @@ header nav .nav-sections ul > li > ul > li {
     position: absolute;
     left: -1em;
     width: 200px;
-    margin-top: 12px;
-    padding: 1em;
-    background-color: var(--navmenu-color);
+    margin-top: 5px;
+    padding: .8em;
+    background-color: var(--brand-color-blue);
     white-space: initial;
+    border-top: .1rem solid var(--brand-color-yellow);
+    border-radius: 8px;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
+  /* header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     content: '';
     position: absolute;
     top: -8px;
@@ -297,7 +299,7 @@ header nav .nav-sections ul > li > ul > li {
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-bottom: 8px solid var(--navmenu-color);
-  }
+  } */
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
     padding: 8px 0;
