@@ -304,6 +304,19 @@ header nav .nav-sections ul > li > ul > li {
   }
 }
 
+/* button */
+
+header nav p.button-container a.button {
+  font-family: var(--body-font-family);
+  display: inline-block;
+  box-sizing: border-box;
+  font-weight: 400;
+  color: var(--brand-color-yellow);
+  background-color: var(--brand-color-lightblue);
+  margin: 16px 0;
+  border: 2px solid var(--brand-color-yellow);
+  border-radius: 8px;
+}
 /* tools */
 header nav .nav-tools {
   grid-area: tools;

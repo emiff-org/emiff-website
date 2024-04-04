@@ -13,6 +13,7 @@
 :root {
   /* colors */
   --brand-color-blue: #4C9AC6;
+  --brand-color-lightblue: #54A9DA;
   --brand-color-yellow: #F4D703;
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
@@ -153,7 +154,7 @@ a.button:any-link, button {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 30px;
+  border-radius: 8px;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
