@@ -3,6 +3,12 @@
   height: 274px;
 }
 
+/* for large carousel, 500px height, 1/2 aspect ratio */
+.carousel.large .carousel-slides-container {
+  position: relative;
+  height: 500px;
+}
+
 .carousel .carousel-slides,
 .carousel .carousel-slide-indicators {
   list-style: none;

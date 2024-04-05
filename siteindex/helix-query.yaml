@@ -1,0 +1,38 @@
+version: 1
+indices:
+  default:
+    include:
+      - /news/**
+      - /press/**
+    exclude:
+      - '**/fragments/**'
+      - '**/sidenav'
+    target: /siteindex/articles-index.json
+    properties:
+      title:
+        select: head > meta[property="og:title"]
+        value: attribute(el, "content")
+      description:
+        select: head > meta[property="description"]
+        value: attribute(el, "content")
+      type:
+        select: head > meta[name="type"]
+        value: attribute(el, "content")
+      topics:
+        select: head > meta[name="topics"]
+        values: attribute(el, "content")
+      image:
+        select: head > meta[property="og:image"]
+        value: attribute(el, "content")
+      lastModified:
+        select: none
+        value: parseTimestamp(headers["last-modified"])
+      publicationDate:
+        select: head > meta[name="published-time"]
+        value: parseTimestamp(attribute(el, "content"))
+      template:
+        select: head > meta[name="template"]
+        value: attribute(el, "content")
+      robots:
+        select: head > meta[name="robots"]
+        value: attribute(el, "content")
