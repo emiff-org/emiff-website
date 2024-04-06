@@ -96,8 +96,8 @@ function decorateLogo(nav) {
     a(
       {
         href: '/',
-        title: 'SAP',
-        'aria-label': 'SAP',
+        title: 'EMIFF',
+        'aria-label': 'EMIFF',
       },
       span({ class: 'icon icon-brand' }),
     ),
