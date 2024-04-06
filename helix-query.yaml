@@ -2,11 +2,11 @@ version: 1
 indices:
   default:
     include:
-      - /news/**
-      - /press/**
+      - /news/*/*
+      - /press/*
     exclude:
       - '**/fragments/**'
-      - '**/sidenav'
+      - '**/templates'
     target: /siteindex/articles-index.json
     properties:
       title:

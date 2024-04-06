@@ -25,8 +25,8 @@
   --navmenu-color: #54A9DA;
 
   /* fonts */
-  --body-font-family: tahoma, sans-serif;
-  --heading-font-family: var(--body-font-family);
+  --body-font-family: 'Roboto', sans-serif;
+  --heading-font-family: var(--font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
@@ -47,11 +47,18 @@
 }
 
 @font-face {
+  font-family: 'Roboto';
+  src:  local('Roboto'), url('../fonts/roboto-regular.woff2') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* @font-face {
   font-family: roboto-fallback;
   size-adjust: 100.06%;
   ascent-override: 95%;
   src: local('Arial');
-}
+} */
 
 @media (width >= 900px) {
   :root {

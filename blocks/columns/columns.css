@@ -12,12 +12,13 @@
 }
 
 .columns > div > .columns-img-col {
+  max-width: 25%;
   order: 0;
 }
 
 /* contains image with person, made round with max width 50%, aligned to the right */
 .columns.authors img {
-  max-width: 50%;
+  max-width: 100%;
   border-radius: 50%;
 }
 
