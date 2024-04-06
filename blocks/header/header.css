@@ -92,15 +92,15 @@ header nav .nav-hamburger-icon::before,
 header nav .nav-hamburger-icon::after {
   content: '';
   position: absolute;
-  background: currentcolor;
+  background: var(--brand-color-blue);
 }
 
 header nav[aria-expanded="false"] .nav-hamburger-icon,
 header nav[aria-expanded="false"] .nav-hamburger-icon::before,
 header nav[aria-expanded="false"] .nav-hamburger-icon::after {
-  height: 2px;
-  border-radius: 2px;
-  background: currentcolor;
+  height: 3px;
+  border-radius: 0px;
+  background: var(--brand-color-blue);
 }
 
 header nav[aria-expanded="false"] .nav-hamburger-icon::before {
@@ -123,7 +123,7 @@ header nav[aria-expanded="true"] .nav-hamburger-icon::after {
   transform-origin: 2px 1px;
   width: 24px;
   height: 2px;
-  border-radius: 2px;
+  border-radius: 0px;
 }
 
 header nav[aria-expanded="true"] .nav-hamburger-icon::after {

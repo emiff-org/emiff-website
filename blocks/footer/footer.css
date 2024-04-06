@@ -12,3 +12,9 @@ footer .footer {
 footer .footer p {
   margin: 0;
 }
+
+footer .section.social-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
