@@ -14,7 +14,7 @@
 .block.social > div > div {
   display: flex;
   align-items: center;
-  background-color: var(--udexColorNeutralWhite);
+  /* background-color: currentColor; */
   padding: 8px;
   margin: 6px;
 }
@@ -33,9 +33,9 @@
   margin: auto;
 }
 
-footer .block.social {
-  padding-top: var(--udexSpacer32);
-}
+/* footer .block.social {
+  padding-top: 32px;
+} */
 
 .social a.button:any-link {
   padding: 0;
@@ -50,26 +50,11 @@ footer .block.social {
 
 /* S */
 /* stylelint-disable-next-line block-no-empty */
-@media (width >= 640px) {
+@media (width >= 600px) {
 }
 
 /* M */
 /* stylelint-disable-next-line block-no-empty */
-@media (width >= 980px) {
+@media (width >= 900px) {
 }
 
-/* L */
-@media (width >= 1280px) {
-  .link-group-container + .social-container {
-    display: none;
-  }
-
-  .contact-wrapper + .social-wrapper {
-    display: block;
-  }
-}
-
-/* XL */
-/* stylelint-disable-next-line block-no-empty */
-@media (width >= 1600px) {
-}

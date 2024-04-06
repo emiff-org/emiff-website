@@ -16,5 +16,12 @@ footer .footer p {
 footer .section.social-container {
   display: flex;
   justify-content: center;
+  flex-direction: column-reverse;
   gap: 1rem;
+}
+
+@media (width >= 980px) {
+  footer .section.social-container {
+    flex-direction: row;
+  }
 }
