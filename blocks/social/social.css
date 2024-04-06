@@ -14,7 +14,6 @@
 .block.social > div > div {
   display: flex;
   align-items: center;
-  /* background-color: currentColor; */
   padding: 8px;
   margin: 6px;
 }
