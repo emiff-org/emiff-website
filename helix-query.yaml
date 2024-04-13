@@ -2,8 +2,9 @@ version: 1
 indices:
   default:
     include:
-      - /news/*/*
-      - /press/*
+      - /news/**
+      - /press/**
+      - /editions/**
     exclude:
       - '**/fragments/**'
       - '**/templates'
