@@ -5,6 +5,7 @@ indices:
       - /news/**
       - /press/**
       - /editions/**
+      - /festival/**
     exclude:
       - '**/fragments/**'
       - '**/templates'
