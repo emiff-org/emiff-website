@@ -15,7 +15,7 @@ indices:
         select: head > meta[property="og:title"]
         value: attribute(el, "content")
       description:
-        select: head > meta[property="description"]
+        select: head > meta[name="description"]
         value: attribute(el, "content")
       type:
         select: head > meta[name="type"]
