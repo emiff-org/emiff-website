@@ -9,7 +9,7 @@ indices:
     exclude:
       - '**/fragments/**'
       - '**/templates'
-    target: /siteindex/articles-index.json
+    target: /query-index
     properties:
       title:
         select: head > meta[property="og:title"]
