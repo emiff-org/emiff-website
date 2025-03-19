@@ -2,6 +2,8 @@
 
 Essential documentation:
 
+- https://www.aem.live/developer/indexing
+- https://www.aem.live/docs/indexing-reference
 - https://www.aem.live/docs/admin.html#tag/index/operation/indexResource
 - https://github.com/adobe/helix-shared/blob/main/docs/index.schema.json
 
