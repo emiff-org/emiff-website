@@ -48,7 +48,7 @@ indices:
     exclude:
       - '**/fragments/**'
       - '**/templates'
-    target: /query-index-es
+    target: /es/query-index
     properties:
       title:
         select: head > meta[property="og:title"]
