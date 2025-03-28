@@ -2,11 +2,14 @@ version: 1
 indices:
   lang-en:
     include:
-      - /*
-      - /news/**
-      - /press/**
-      - /festival/**
+      - '/*'
+      - '/news/**'
+      - '/press/**'
+      - '/festival/**'
     exclude:
+      - '/read me'
+      - '/nav'
+      - '/footer'
       - '/es/**'
       - '**/fragments/**'
       - '**/templates'
@@ -41,10 +44,14 @@ indices:
         value: attribute(el, "content")
   lang-es:
     include:
-      - /es/news/**
-      - /es/press/**
-      - /es/festival/**
+      - '/*'
+      - '/es/news/**'
+      - '/es/press/**'
+      - '/es/festival/**'
     exclude:
+      - '/read me'
+      - '/nav'
+      - '/footer'
       - '**/fragments/**'
       - '**/templates'
     target: /es/query-index
