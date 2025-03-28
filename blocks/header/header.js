@@ -1,4 +1,4 @@
-import { getMetadata, decorateIcons } from '../../scripts/aem.js';
+import { getMetadata, decorateIcon } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 import {
   div, span, a,
@@ -118,7 +118,8 @@ function decorateLogo(nav) {
   }
   const brandElement = navBrand.querySelectorAll('p');
   brandElement[0].classList.add('site-label');
-  decorateIcons(brandLogo);
+  const iconSpan = brandLogo.querySelector('span.icon');
+  decorateIcon(iconSpan, '', '', 'webp');
 }
 
 /**

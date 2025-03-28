@@ -1,6 +1,6 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--brand-color-blue);
+  background-color: var(--background-color);
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -55,7 +55,7 @@ header nav p {
 }
 
 header nav a:any-link {
-  color: currentcolor;
+  color: var(--brand-color);
 }
 
 /* hamburger */
@@ -92,14 +92,14 @@ header nav .nav-hamburger-icon::before,
 header nav .nav-hamburger-icon::after {
   content: '';
   position: absolute;
-  background: var(--brand-color-blue);
+  background: var(--brand-color);
 }
 
 header nav[aria-expanded="false"] .nav-hamburger-icon,
 header nav[aria-expanded="false"] .nav-hamburger-icon::before,
 header nav[aria-expanded="false"] .nav-hamburger-icon::after {
   height: 3px;
-  background: var(--brand-color-blue);
+  background: var(--brand-color);
 }
 
 header nav[aria-expanded="false"] .nav-hamburger-icon::before {
@@ -170,7 +170,7 @@ header nav .nav-brand .icon {
 header nav .nav-brand .site-label {
   display: none;
   position: relative;
-  color: var(--brand-color-blue);
+  color: var(--brand-color);
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 1;
@@ -267,6 +267,7 @@ header nav .nav-sections ul > li > ul > li {
     flex: 0 1 auto;
     position: relative;
     font-weight: 500;
+    color: var(--brand-color);
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
@@ -281,7 +282,7 @@ header nav .nav-sections ul > li > ul > li {
     width: 200px;
     margin-top: 5px;
     padding: .8em;
-    background-color: var(--brand-color-blue);
+    background-color: var(--brand-color);
     white-space: initial;
     border-top: .1rem solid var(--brand-color-yellow);
     border-radius: 8px;
@@ -311,7 +312,7 @@ header nav p.button-container a.button {
   box-sizing: border-box;
   font-weight: 400;
   color: var(--brand-color-yellow);
-  background-color: var(--brand-color-lightblue);
+  background-color: var(--brand-color-light);
   margin: 16px 0;
   border: 2px solid var(--brand-color-yellow);
   border-radius: 8px;

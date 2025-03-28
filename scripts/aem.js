@@ -415,14 +415,15 @@ function decorateButtons(element) {
  * @param {Element} [span] span element with icon classes
  * @param {string} [prefix] prefix to be added to icon src
  * @param {string} [alt] alt text to be added to icon
+ * @param {string} [format] file extension of image format
  */
-function decorateIcon(span, prefix = '', alt = '') {
+function decorateIcon(span, prefix = '', alt = '', format = 'svg') {
   const iconName = Array.from(span.classList)
     .find((c) => c.startsWith('icon-'))
     .substring(5);
   const img = document.createElement('img');
   img.dataset.iconName = iconName;
-  img.src = `${window.hlx.codeBasePath}${prefix}/icons/${iconName}.svg`;
+  img.src = `${window.hlx.codeBasePath}${prefix}/icons/${iconName}.${format}`;
   img.alt = alt;
   img.loading = 'lazy';
   span.append(img);
@@ -705,6 +706,7 @@ export {
   decorateBlock,
   decorateBlocks,
   decorateButtons,
+  decorateIcon,
   decorateIcons,
   decorateSections,
   decorateTemplateAndTheme,

@@ -12,8 +12,8 @@
 
 :root {
   /* colors */
-  --brand-color-blue: #4C9AC6;
-  --brand-color-lightblue: #54A9DA;
+  --brand-color: #d91474;
+  --brand-color-light: #54A9DA;
   --brand-color-yellow: #F4D703;
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
@@ -156,7 +156,7 @@ a.button:any-link, button {
   font-weight: 300;
   cursor: pointer;
   color: var(--brand-color-yellow);
-  background-color: var(--brand-color-lightblue);
+  background-color: var(--brand-color-light);
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;

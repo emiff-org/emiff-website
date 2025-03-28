@@ -4,7 +4,6 @@ indices:
     include:
       - /news/**
       - /press/**
-      - /editions/**
       - /festival/**
     exclude:
       - '/es/**'
@@ -43,7 +42,6 @@ indices:
     include:
       - /es/news/**
       - /es/press/**
-      - /es/editions/**
       - /es/festival/**
     exclude:
       - '**/fragments/**'
