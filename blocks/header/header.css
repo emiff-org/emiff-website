@@ -55,7 +55,7 @@ header nav p {
 }
 
 header nav a:any-link {
-  color: var(--brand-color);
+  color: var(--light-color);
 }
 
 /* hamburger */
