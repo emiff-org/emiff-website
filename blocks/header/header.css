@@ -55,7 +55,7 @@ header nav p {
 }
 
 header nav a:any-link {
-  color: var(--light-color);
+  color: var(--brand-color);
 }
 
 /* hamburger */
@@ -284,10 +284,12 @@ header nav .nav-sections ul > li > ul > li {
     padding: .8em;
     background-color: var(--brand-color);
     white-space: initial;
-    border-top: .1rem solid var(--brand-color-yellow);
-    border-radius: 8px;
   }
 
+  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded="true"] > ul a:any-link {
+    color: var(--light-color);
+  }
+  
   /* header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     content: '';
     position: absolute;
